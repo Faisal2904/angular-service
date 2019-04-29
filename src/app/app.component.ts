@@ -17,5 +17,8 @@ export class AppComponent {
   onSetToActive(id: number) {
     this.activeUsers.push(this.inactiveUsers[id]);
     this.inactiveUsers.splice(id, 1);
+    console.log("active users"+this.activeUsers)
+      console.log("inactive users"+this.inactiveUsers)
   }
+
 }
