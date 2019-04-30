@@ -9,22 +9,6 @@ import { UserService } from './user.service';
  // providers:[UserService]
 })
 export class AppComponent {
-  activeUsers = ['Max', 'Anna'];
-  inactiveUsers = ['Chris', 'Manu'];
-  constructor(private userService:UserService){
-    this.userService.onSetToInactive(1);
-  }
-
-  // onSetToInactive(id: number) {
-  //   this.inactiveUsers.push(this.activeUsers[id]);
-  //   this.activeUsers.splice(id, 1);
-  // }
-
-  // onSetToActive(id: number) {
-  //   this.activeUsers.push(this.inactiveUsers[id]);
-  //   this.inactiveUsers.splice(id, 1);
-  //   console.log("active users"+this.activeUsers)
-  //     console.log("inactive users"+this.inactiveUsers)
-  // }
+  
 
 }
