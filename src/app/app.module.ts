@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ActiveUsersComponent } from './active-users/active-users.component';
 import { InactiveUsersComponent } from './inactive-users/inactive-users.component';
- import { UserService } from './app.module';
+// import { UserService } from './app.module';
 
 @NgModule({
 
@@ -21,7 +21,7 @@ import { InactiveUsersComponent } from './inactive-users/inactive-users.componen
     FormsModule,
     HttpModule
   ],
-   providers: [UserService],
+   providers: [],
 
  
   bootstrap: [AppComponent]
