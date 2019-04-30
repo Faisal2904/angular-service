@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { UserService } from './app.module';
+import { UserService } from './user.service';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +11,9 @@ import { UserService } from './app.module';
 export class AppComponent {
   activeUsers = ['Max', 'Anna'];
   inactiveUsers = ['Chris', 'Manu'];
+  constructor(private userService:UserService){
+    this.userService.onSetToInactive(1);
+  }
 
   // onSetToInactive(id: number) {
   //   this.inactiveUsers.push(this.activeUsers[id]);
